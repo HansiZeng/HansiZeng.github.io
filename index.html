@@ -84,6 +84,15 @@
     .ref { color: var(--link); text-decoration: none; border: none !important; background: none !important; padding: 0; }
     .ref:hover { text-decoration: underline; }
       .award { color: var(--link); font-weight: 600; }
+
+    .exp-list { list-style: none; padding: 0; margin: 0; }
+    .exp-item { display: flex; gap: 20px; align-items: center; }
+    .exp-item + .exp-item { margin-top: 18px; }
+    .exp-logo { width: 72px; height: 72px; min-width: 72px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .exp-logo img { width: 52px; height: 52px; object-fit: contain; border-radius: 6px; }
+    .exp-company { font-weight: 600; font-size: 16px; color: var(--text); }
+    .exp-role { font-size: 14px; color: var(--text); }
+    .exp-date { font-size: 13px; color: var(--muted); }
   </style>
   <script>
     (function() {
@@ -224,13 +233,48 @@
 
         <section class="card section">
           <h2>Experience</h2>
-          <ul class="list">
-            <li><b>Snapchat</b> — Part-time Research Intern · Sep 2025–Present</li>
-            <li><b>Amazon</b> — Applied Scientist Intern · May–Aug 2025</li>
-            <li><b>Google DeepMind</b> — Student Research Intern · May 2024–Mar 2025</li>
-            <li><b>Amazon</b> — Applied Scientist Intern · May–Dec 2023</li>
-            <li><b>Lowe’s</b> — Data Science Graduate Intern · May–Aug 2022</li>
-          </ul>
+          <div class="exp-list">
+            <div class="exp-item">
+              <div class="exp-logo"><img src="images/logos/snapchat.png" alt="Snapchat" /></div>
+              <div>
+                <div class="exp-company">Snapchat</div>
+                <div class="exp-role">Part-time Research Intern</div>
+                <div class="exp-date">Sep 2025 – Present</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-logo"><img src="images/logos/amazon.svg" alt="Amazon" /></div>
+              <div>
+                <div class="exp-company">Amazon</div>
+                <div class="exp-role">Applied Scientist Intern</div>
+                <div class="exp-date">May – Aug 2025</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-logo"><img src="images/logos/google-deepmind.png" alt="Google DeepMind" /></div>
+              <div>
+                <div class="exp-company">Google DeepMind</div>
+                <div class="exp-role">Student Research Intern</div>
+                <div class="exp-date">May 2024 – Mar 2025</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-logo"><img src="images/logos/amazon.svg" alt="Amazon" /></div>
+              <div>
+                <div class="exp-company">Amazon</div>
+                <div class="exp-role">Applied Scientist Intern</div>
+                <div class="exp-date">May – Dec 2023</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-logo"><img src="images/logos/lowes.svg" alt="Lowe’s" /></div>
+              <div>
+                <div class="exp-company">Lowe’s</div>
+                <div class="exp-role">Data Science Graduate Intern</div>
+                <div class="exp-date">May – Aug 2022</div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 
